@@ -1,0 +1,48 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="card education-card">
+
+  <h2 class="section-title" style="color: var(--primary); margin-bottom: 24px;">Education</h2>
+
+  <div class="education-grid">
+
+    <!-- B.Tech -->
+    <div class="edu-card">
+      <h3>B.Tech – Computer Science (AI & ML)</h3>
+      <p><strong>College:</strong> SRM Institute of Science and Technology</p>
+      <p><strong>Semester:</strong> 8th</p>
+      <p><strong>CGPA:</strong> 9.07 / 10</p>
+      <span class="edu-badge current">Current</span>
+    </div>
+
+    <!-- Intermediate -->
+    <div class="edu-card">
+      <h3>Intermediate (MPC)</h3>
+      <p><strong>College:</strong> Narayana Junior College</p>
+      <p><strong>Percentage:</strong> 87.9%</p>
+      <p><strong>Year:</strong> 2022</p>
+      <span class="edu-badge completed">Completed</span>
+    </div>
+
+    <!-- SSC -->
+    <div class="edu-card">
+      <h3>SSC</h3>
+      <p><strong>School:</strong> Harish E.M. High School</p>
+      <p><strong>CGPA:</strong> 9.8/10</p>
+      <p><strong>Year:</strong> 2020</p>
+      <span class="edu-badge completed">Completed</span>
+    </div>
+
+  </div>
+
+  <!-- Optional GitHub Link -->
+  <div class="edu-github">
+    <a href="https://github.com/ShaikRukhiya" target="_blank" class="btn btn-outline">
+      View Projects on GitHub
+    </a>
+  </div>
+
+</div>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shaik Rukhiya Masthani</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="{% static 'portfolio/css/style.css' %}">
+</head>
+<body>
+
+<header class="site-header">
+  <h1>Shaik Rukhiya Masthani</h1>
+
+  <p class="header-sub">
+    8th Semester • Computer Science (AI & ML)
+  </p>
+
+  <p class="header-welcome">
+    Welcome to my portfolio
+  </p>
+</header>
+
+
+<nav>
+  <a href="/">Home</a>
+  <a href="/about/">About</a>
+  <a href="/education/">Education</a>
+  <a href="/project/">Projects</a>
+  <a href="/contact/">Contact</a>
+</nav>
+
+<main class="container">
+  {% block content %}{% endblock %}
+</main>
+
+</body>
+</html>

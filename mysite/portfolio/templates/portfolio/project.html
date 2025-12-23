@@ -1,0 +1,84 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="card">
+
+  <h2 class="section-title" style="color: var(--primary); margin-bottom: 32px;">
+    Projects
+  </h2>
+
+  <div class="project-grid-single-row">
+
+    <!-- Project 1 -->
+    <div class="project-card color-blue">
+      <h3>Streamlined Online Survey Solution</h3>
+      <p class="project-role">Full Stack Web Application</p>
+
+      <ul class="project-points">
+        <li>Designed a web-based system for collecting and visualizing feedback</li>
+        <li>Implemented bar-graph based analytics for survey responses</li>
+        <li>Focused on simplicity and usability for teachers and students</li>
+      </ul>
+
+      <div class="tech-tags">
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">Django</span>
+        <span class="tech-tag">JavaScript</span>
+      </div>
+
+      <a href="https://github.com/ShaikRukhiya" target="_blank" class="btn btn-outline">
+        View Code
+      </a>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card color-green">
+      <h3>AI-Driven Climate Change Modeling</h3>
+      <p class="project-role">Machine Learning Project</p>
+
+      <ul class="project-points">
+        <li>Built ML models to predict climate trends from historical data</li>
+        <li>Performed data preprocessing and feature analysis using Pandas</li>
+        <li>Evaluated model performance using standard ML metrics</li>
+      </ul>
+
+      <div class="tech-tags">
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">Machine Learning</span>
+        <span class="tech-tag">Pandas</span>
+      </div>
+
+      <a href="https://github.com/ShaikRukhiya" target="_blank" class="btn btn-outline">
+        View Code
+      </a>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card color-purple">
+      <h3>Doodle Dataset Classifier</h3>
+      <p class="project-role">Deep Learning / Computer Vision</p>
+
+      <ul class="project-points">
+        <li>Developed a deep learning model to classify doodle sketches</li>
+        <li>Used OpenCV for image preprocessing and augmentation</li>
+        <li>Trained and tested the model on a public doodle dataset</li>
+      </ul>
+
+      <div class="tech-tags">
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">TensorFlow</span>
+        <span class="tech-tag">OpenCV</span>
+      </div>
+
+      <a href="https://github.com/ShaikRukhiya" target="_blank" class="btn btn-outline">
+        View Code
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+{% endblock %}

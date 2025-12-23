@@ -1,0 +1,59 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="card about-card">
+
+  <div class="about-grid">
+
+    <!-- LEFT: PASSPORT PHOTO -->
+    <div class="about-photo">
+      <img
+        src="{% static 'Portfolio/images/passport.jpg' %}"
+        alt="Shaik Rukhiya Masthani"
+        class="passport about-passport"
+      >
+    </div>
+
+    <!-- RIGHT: ABOUT CONTENT -->
+    <div class="about-content">
+      <h2 class="about-title">About Me</h2>
+
+      <p>
+        Hello! I am <strong>Shaik Rukhiya Masthani</strong>, an 8th Semester 
+        Computer Science student specializing in <strong>AI & ML</strong>.
+      </p>
+
+      <p>
+        Passionate about building clean and scalable web applications.
+      </p>
+
+      <!-- TECH BADGES -->
+      <div class="skills">
+        <span class="skill">Python</span>
+        <span class="skill">Django</span>
+        <span class="skill">HTML/CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">AI/ML</span>
+        <span class="skill">Data Analysis</span>
+      </div>
+
+      <p class="about-highlight">
+        Seeking <strong>internship or entry-level opportunities</strong>.
+      </p>
+
+      <!-- DOWNLOAD RESUME BUTTON -->
+      <div class="hero-ctas">
+        <a href="{% static 'Portfolio/files/Rukhiya_Resume.pdf' %}" class="btn" download>
+          Download Resume
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+{% endblock %}

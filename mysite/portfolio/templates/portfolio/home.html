@@ -1,0 +1,70 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="card hero">
+  <div class="hero-grid">
+
+    <!-- LEFT CONTENT -->
+    <div class="hero-left">
+
+      <h2 class="hero-title">
+        Aspiring Software Engineer
+      </h2>
+
+      <p class="lead">
+        Passionate about backend development, problem-solving,
+        and building clean web applications using Django & Python.
+      </p>
+
+      <p class="hero-summary">
+        I am a final-year Computer Science student specializing in
+        Artificial Intelligence and Machine Learning.
+        I enjoy turning ideas into reliable, scalable applications
+        and continuously improving my technical skills.
+      </p>
+
+      <!-- CTA BUTTONS -->
+      <div class="hero-ctas">
+        <a href="/contact/" class="btn">Hire Me</a>
+
+        <a href="{% static 'portfolio/files/resume.pdf' %}"
+           class="btn btn-outline"
+           download>
+          Download Resume
+        </a>
+      </div>
+
+      <!-- SKILLS -->
+      <div class="skills">
+        <span class="skill">Python</span>
+        <span class="skill">Django</span>
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">SQL</span>
+      </div>
+
+      <!-- SOCIAL ICONS -->
+      <div class="social-links">
+        <a href="https://github.com/" target="_blank" aria-label="GitHub">
+          <img src="{% static 'portfolio/images/github.png' %}" class="social-icon">
+        </a>
+
+        <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn">
+          <img src="{% static 'portfolio/images/linkedin.png' %}" class="social-icon">
+        </a>
+      </div>
+
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div class="hero-right">
+      <img src="{% static 'portfolio/images/passport.jpg' %}"
+           alt="Shaik Rukhiya Masthani"
+           class="passport">
+    </div>
+
+  </div>
+</div>
+{% endblock %}
